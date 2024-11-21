@@ -55,3 +55,7 @@ main {
 .unmatched {
   opacity: .5;
 }
+
+.inactive {
+  opacity: .5;
+}
