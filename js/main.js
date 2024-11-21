@@ -46,8 +46,20 @@
       }, 50);
     }
 
-  }
+    isunmatched(p1,p2){
+    //   if(this.img.src !== p1.img.src && p2.img.src){
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // }
+      return this.img.src !== p1.img.src && p2.img.src;
+    }
 
+    unmatch() {
+      this.img.classList.add('unmatched');
+    }
+  }
   function checkResult(){
     if ( panels[0].isunmatched(panels[1],panels[2]) ) {
       panels[0].unmatch()
